@@ -46,7 +46,7 @@
                            <tr>
                             <td>
                                 workphone</td><td>
-                                <input type="text" id="workphone" class="form-control" name="workphone"
+                                <input type="number" id="workphone" class="form-control" name="workphone"
                                         required>
 </td>
  <td>                           
@@ -330,7 +330,7 @@ fax </td><td>
 </td>
                             
                            <td>  state </td><td>
-                               <select id="state" name="state" class="form-control" style="width: 39%;">
+ <select id="state" name="state" class="form-control" style="width: 39%;">
 	<option value="AP">Andhra Pradesh</option>
 	<option value="AR">Arunachal Pradesh</option>
 	<option value="AS">Assam</option>
@@ -387,7 +387,8 @@ fax </td><td>
 </tr>
 <tr>
     <td>
-                           maritial </td><td><select name="maritalstatus" id="maritalstatus">
+                           martial </td>
+    <td><select name="martialstatus" id="martialstatus">
     <option value="">-Select Marital Status-</option>
     <option value="Single">Single</option>
     <option value="Married">Married</option>

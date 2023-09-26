@@ -32,7 +32,7 @@ return new class extends Migration
             $table->text('zip')->default('0');
             $table->text('gender')->default('0');
             $table->text('martialstatus')->default('0');
-            $table->text('dob')->default('0');
+            // $table->text('dob')->default('0');
             $table->text('agree')->default('0');
 
             $table->timestamps();
