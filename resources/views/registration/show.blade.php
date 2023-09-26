@@ -6,9 +6,12 @@
                 <a href="/register" class="btn btn-outline-primary btn-sm">Go back</a>
                 <h1 class="display-one">{{ ucfirst($post->firstname) }}</h1>
                 <p>{!! $post->lastname !!}</p> 
+                
+                
                 <hr>
                 <a href="/register/{{ $post->id }}/edit" class="btn btn-outline-primary">Edit Profile</a>
-                <br><br>
+                <br>
+                <p>{!! $post->homephone !!}homephone</p><br>
                 <form id="delete-frm" class="" action="" method="POST">
                     @method('DELETE')
                     @csrf

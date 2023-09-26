@@ -41,10 +41,24 @@ class RegistrationController extends Controller
         $newPost = Registration::create([
             'firstname' => $request->firstname,
             'lastname' => $request->lastname,
-            
+            'homephone' => $request->homephone,
+            'extension' => $request->extension,
+            'workphone'>=$request->workphone,
+            'fax'>=$request->fax,
+            'cellphone'>=$request->cellphone,
+            'email'>=$request->email,
+            'homeaddress'>=$request->homeaddress,
+            'country'>=$request->country,
+            'city'>=$request->city,
+            'state'>=$request->state,
+            'zip'>=$request->zip,
+            'gender'>=$request->gender,
+            'martialstatus'>=$request->martialstatus,
+            'dob'>=$request->dob,
+            'checkbox'>=$request->agree,
         ]);
 
-        return redirect('register/' . $newPost->id);
+        return redirect('/');
     }
 
     /**

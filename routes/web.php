@@ -16,10 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/register', [\App\Http\Controllers\RegistrationController::class, 'index']);
+Route::get('/users', [\App\Http\Controllers\RegistrationController::class, 'index']);
 Route::get('/register/{registration}', [\App\Http\Controllers\RegistrationController::class, 'show']);
-Route::get('/registration/create/post', [\App\Http\Controllers\RegistrationController::class, 'create']);
-Route::post('/registration/create/post', [\App\Http\Controllers\RegistrationController::class, 'store']);
+Route::get('/register', [\App\Http\Controllers\RegistrationController::class, 'create']);
+Route::post('/register', [\App\Http\Controllers\RegistrationController::class, 'store']);
 
 Route::get('/register/{registration}/edit', [\App\Http\Controllers\RegistrationController::class, 'edit']);
 Route::put('/register/{registration}/edit', [\App\Http\Controllers\RegistrationController::class, 'update']);

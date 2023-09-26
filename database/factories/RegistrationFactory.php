@@ -19,7 +19,8 @@ class RegistrationFactory extends Factory
         return [
             //
             'firstname' => $this->faker->sentence, //Generates a fake sentence
-            'lastname' => $this->faker->sentence, //generates fake 30 paragraphs
+            'lastname' => $this->faker->sentence, 
+            //generates fake 30 paragraphs
             // 'user_id' => User::factory() 
         ];
     }
