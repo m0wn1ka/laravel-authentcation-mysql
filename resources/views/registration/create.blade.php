@@ -2,67 +2,81 @@
 
 @section('content')
 
-    <div class="container">
+    <div class="container" >
         <div class="row">
             <div class="col-12 pt-2">
                 <a href="/" class="btn btn-outline-primary btn-sm">Go back</a>
                 <div class="border rounded mt-5 pl-4 pr-4 pt-4 pb-4">
-                    <h1 class="display-4">Create a New User</h1>
-                    <p>Fill and submit this form to create a user</p>
-
-                    <hr>
-
-                    <form action="" method="POST">
+                    <h1 class="display-4">registration</h1>
+                    <form action="" method="POST" style="width: 100%;">
                         @csrf
                         <div class="row">
-                            <div class="control-group col-12">
-                                <label for="title">firstname</label>&nbsp &nbsp &nbsp
-                                <input type="text" id="firstname" class="form-control" name="firstname"
-                                        required>&nbsp &nbsp
-                            
-                            
-                                <label for="lastname">lastname</label>
-                                <input type="text" id="lastname" class="form-control" name="lastname"
+</div>
+                            <div class="control-group col-12"></div>
+                            <table style="width: 100%;">
+                                <tr>
+                                    <td>firstname</td><td> <input type="text" id="firstname" class="form-control" name="firstname"
+                                        required> 
+                                    </td>
+                                        <td>
+                                            lastname </td><td><input type="text" id="lastname" class="form-control" name="lastname"
                                         required>
-                            </div>
-                            <div class="control-group col-12">
-                                <label for="homephone">homephone</label>
+                                        </td>
+
+                                </tr>
+
+                               
+                            
+                            
+                                
+                                
+                           
+                            <tr>
+                                <td>homephone</td><td>
                                 <input type="number" id="homephone" class="form-control" name="homephone"
                                        required>
                             
-                            
-                                <label for="extension">extension</label>&nbsp &nbsp 
+                                </td>
+                                <td>
+                                extension</td><td>
                                 <input type="number" id="extension" class="form-control" name="extension"
                                         required>
-                            </div>
-                            <div class="control-group col-12">
-                                <label for="workphone">workphone</label>&nbsp
+                                </td>
+</tr>
+                           <tr>
+                            <td>
+                                workphone</td><td>
                                 <input type="text" id="workphone" class="form-control" name="workphone"
                                         required>
-                            
-                            
-                                <label for="fax">fax &nbsp  &nbsp  &nbsp  &nbsp &nbsp &nbsp &nbsp </label>
+</td>
+ <td>                           
+fax </td><td>
                                 <input type="number" id="fax" class="form-control" name="fax"
                                        required>
-                            </div>
-
-                            <div class="control-group col-12">
-                                <label for="cellphone">cellphone</label>&nbsp &nbsp
+</td>
+</tr>
+<tr>
+    <td>
+                           cellphone</td><td>
                                 <input type="number" id="cellphone" class="form-control" name="cellphone"
                                         required>
-                            
-                            
-                                <label for="email">email &nbsp  &nbsp   &nbsp &nbsp &nbsp &nbsp </label>
+</td>
+                           <td> 
+                                email </td><td>
                                 <input type="email" id="email" class="form-control" name="email"
                                        required>
-                            </div>
-                            <div>
-                            <label for="homeaddress">homeaddre</label>&nbsp
+</td>
+</tr>
+<tr>
+    <td>
+                            homeaddres</td><td>
                                 <input type="text" id="homeaddress" class="form-control" name="homeaddress"
                                         required>
-                            <label for="country">Country</label><span style="color: red !important; display: inline; float: none;">*</span>      
+</td>
+<td>
+                           Country </td><td>    
         
-        <select id="country" name="country" class="form-control">
+        <select id="country" name="country" class="form-control"  style="width: 39%;">
             <option value="Afghanistan">Afghanistan</option>
             <option value="Åland Islands">Åland Islands</option>
             <option value="Albania">Albania</option>
@@ -94,7 +108,7 @@
             <option value="Botswana">Botswana</option>
             <option value="Bouvet Island">Bouvet Island</option>
             <option value="Brazil">Brazil</option>
-            <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+            <option value="British Indian Ocean Territory">British Indian Ocean </option>
             <option value="Brunei Darussalam">Brunei Darussalam</option>
             <option value="Bulgaria">Bulgaria</option>
             <option value="Burkina Faso">Burkina Faso</option>
@@ -113,7 +127,7 @@
             <option value="Colombia">Colombia</option>
             <option value="Comoros">Comoros</option>
             <option value="Congo">Congo</option>
-            <option value="Congo, The Democratic Republic of The">Congo, The Democratic Republic of The</option>
+            <option value="Congo, The Democratic Republic of The">Congo</option>
             <option value="Cook Islands">Cook Islands</option>
             <option value="Costa Rica">Costa Rica</option>
             <option value="Cote D'ivoire">Cote D'ivoire</option>
@@ -178,7 +192,7 @@
             <option value="Kazakhstan">Kazakhstan</option>
             <option value="Kenya">Kenya</option>
             <option value="Kiribati">Kiribati</option>
-            <option value="Korea, Democratic People's Republic of">Korea, Democratic People's Republic of</option>
+            <option value="Korea, Democratic People's Republic of">Korea</option>
             <option value="Korea, Republic of">Korea, Republic of</option>
             <option value="Kuwait">Kuwait</option>
             <option value="Kyrgyzstan">Kyrgyzstan</option>
@@ -192,7 +206,7 @@
             <option value="Lithuania">Lithuania</option>
             <option value="Luxembourg">Luxembourg</option>
             <option value="Macao">Macao</option>
-            <option value="Macedonia, The Former Yugoslav Republic of">Macedonia, The Former Yugoslav Republic of</option>
+            <option value="Macedonia, The Former Yugoslav Republic of">Macedonia</option>
             <option value="Madagascar">Madagascar</option>
             <option value="Malawi">Malawi</option>
             <option value="Malaysia">Malaysia</option>
@@ -205,7 +219,7 @@
             <option value="Mauritius">Mauritius</option>
             <option value="Mayotte">Mayotte</option>
             <option value="Mexico">Mexico</option>
-            <option value="Micronesia, Federated States of">Micronesia, Federated States of</option>
+            <option value="Micronesia, Federated States of">Micronesia</option>
             <option value="Moldova, Republic of">Moldova, Republic of</option>
             <option value="Monaco">Monaco</option>
             <option value="Mongolia">Mongolia</option>
@@ -231,7 +245,7 @@
             <option value="Oman">Oman</option>
             <option value="Pakistan">Pakistan</option>
             <option value="Palau">Palau</option>
-            <option value="Palestinian Territory, Occupied">Palestinian Territory, Occupied</option>
+            <option value="Palestinian Territory, Occupied">Palestinian Territory</option>
             <option value="Panama">Panama</option>
             <option value="Papua New Guinea">Papua New Guinea</option>
             <option value="Paraguay">Paraguay</option>
@@ -250,7 +264,7 @@
             <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
             <option value="Saint Lucia">Saint Lucia</option>
             <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
-            <option value="Saint Vincent and The Grenadines">Saint Vincent and The Grenadines</option>
+            <option value="Saint Vincent and The Grenadines">Saint Vincent/option>
             <option value="Samoa">Samoa</option>
             <option value="San Marino">San Marino</option>
             <option value="Sao Tome and Principe">Sao Tome and Principe</option>
@@ -265,7 +279,7 @@
             <option value="Solomon Islands">Solomon Islands</option>
             <option value="Somalia">Somalia</option>
             <option value="South Africa">South Africa</option>
-            <option value="South Georgia and The South Sandwich Islands">South Georgia and The South Sandwich Islands</option>
+            <option value="South Georgia and The South Sandwich Islands">South Georgia</option>
             <option value="Spain">Spain</option>
             <option value="Sri Lanka">Sri Lanka</option>
             <option value="Sudan">Sudan</option>
@@ -277,7 +291,7 @@
             <option value="Syrian Arab Republic">Syrian Arab Republic</option>
             <option value="Taiwan">Taiwan</option>
             <option value="Tajikistan">Tajikistan</option>
-            <option value="Tanzania, United Republic of">Tanzania, United Republic of</option>
+            <option value="Tanzania, United Republic of">Tanzania</option>
             <option value="Thailand">Thailand</option>
             <option value="Timor-leste">Timor-leste</option>
             <option value="Togo">Togo</option>
@@ -294,7 +308,7 @@
             <option value="United Arab Emirates">United Arab Emirates</option>
             <option value="United Kingdom">United Kingdom</option>
             <option value="United States">United States</option>
-            <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+            <option value="United States Minor Outlying Islands">United States </option>
             <option value="Uruguay">Uruguay</option>
             <option value="Uzbekistan">Uzbekistan</option>
             <option value="Vanuatu">Vanuatu</option>
@@ -308,15 +322,15 @@
             <option value="Zambia">Zambia</option>
             <option value="Zimbabwe">Zimbabwe</option>
         </select> 
-                            </div>
-                            <div class="control-group col-12">
-                                <label for="city">city</label>&nbsp &nbsp  &nbsp &nbsp    &nbsp &nbsp &nbsp &nbsp
-                                <input type="text" id="city" class="form-control" name="city"
+</td>
+</tr>
+<tr>
+                            <td>city</td><td><input type="text" id="city" class="form-control" name="city"
                                         required>
+</td>
                             
-                            
-                                <label for="state">state &nbsp  &nbsp   &nbsp &nbsp  </label>
-                               <select id="state" name="state" class="form-control">
+                           <td>  state </td><td>
+                               <select id="state" name="state" class="form-control" style="width: 39%;">
 	<option value="AP">Andhra Pradesh</option>
 	<option value="AR">Arunachal Pradesh</option>
 	<option value="AS">Assam</option>
@@ -354,40 +368,37 @@
 	<option value="LD">Lakshadweep</option>
 	<option value="PY">Puducherry</option>
 </select>
-                            </div>
+</td></tr>
+
 
                       
-                            <div class="control-group col-12">
-                                <label for="zip">zip</label>&nbsp &nbsp &nbsp &nbsp
+                            <tr><td>zip</td><td>
+                                
                                 <input type="text" id="zip" class="form-control" name="zip"
                                         required>
+</td><td>
                             
-                            
-                                        &nbsp &nbsp &nbsp &nbsp <label for="gender">gender  &nbsp &nbsp &nbsp &nbsp </label>
-                                <select id="gender" name="gender" class="form-control">
+                                      gender </td><td>
+                                <select id="gender" name="gender" class="form-control" style="width: 39%;">
 	<option value="male">male</option>
 	<option value="female">female</option>
     </select>
-                            </div>
-                            <div class="control-group col-12">
-                            <!-- <label for="martialstatus">martial status   &nbsp &nbsp &nbsp &nbsp </label> -->
-                               
-                               
-                               
-                            </div>
-                            <div>
-                            <lable for ='martialstatus'>maritial</label><select name="maritalstatus" id="maritalstatus">
+</td>
+</tr>
+<tr>
+    <td>
+                           maritial </td><td><select name="maritalstatus" id="maritalstatus">
     <option value="">-Select Marital Status-</option>
     <option value="Single">Single</option>
     <option value="Married">Married</option>
     <option value="Widowed">Widowed</option>
     <option value="Separated">Separated</option>
     <option value="Divorced">Divorced</option>
-</select>
-<label for="dob">dob:</label>
-<input type="date" id="dob" name="dob">
-</div>
-<div>
+</select></td>
+<td>dob:</td><td>
+<input type="date" id="dob" name="dob" style="width: 39%;">
+</td></tr>
+</table>
 <input type="checkbox" id="agree" name="agree" value="agree">
 I agree to the GMRO Terms Conditions and consent to the collection of personal data pursuant to the GMRO Privacy Policy
 </div>
@@ -397,6 +408,7 @@ I agree to the GMRO Terms Conditions and consent to the collection of personal d
                                 <button id="btn-submit" class="btn btn-primary">
                                     Create User
                                 </button>
+                                <script> window.alert("hi")</script>
                             </div>
 </div>
                         </div>
