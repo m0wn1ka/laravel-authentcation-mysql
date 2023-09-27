@@ -13,3 +13,7 @@ change create_registration_table in database/migraions folder
 run ```php artisan migrate:refresh```
 <br>
 update registration model
+## adding mail feature
+https://www.tutorialspoint.com/laravel/laravel_sending_email.htm
+
+php artisan config:cache

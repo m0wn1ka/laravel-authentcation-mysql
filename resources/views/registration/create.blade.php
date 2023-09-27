@@ -5,9 +5,9 @@
     <div class="container" >
         <div class="row">
             <div class="col-12 pt-2">
-                <a href="/" class="btn btn-outline-primary btn-sm">Go back</a>
+                <!-- <a href="/" class="btn btn-outline-primary btn-sm">Go back</a> -->
                 <div class="border rounded mt-5 pl-4 pr-4 pt-4 pb-4">
-                    <h1 class="display-4">registration</h1>
+                  <center>  <h1 class="display-4">registration</h1></center>
                     <form action="" method="POST" style="width: 100%;">
                         @csrf
                         <div class="row">
@@ -406,10 +406,10 @@ I agree to the GMRO Terms Conditions and consent to the collection of personal d
                             
                         <div class="row mt-2">
                             <div class="control-group col-12 text-center">
-                                <button id="btn-submit" class="btn btn-primary">
+                                <button id="btn-submit" class="btn btn-primary" onclick="alert('registerd')">
                                     Create User
                                 </button>
-                                <script> window.alert("hi")</script>
+                                
                             </div>
 </div>
                         </div>

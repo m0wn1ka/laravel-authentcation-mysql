@@ -57,8 +57,8 @@ class RegistrationController extends Controller
             // 'dob' => $request->dob,
             'agree' => $request->agree,
         ]);
-
-        return redirect('/');
+       
+        return redirect('/iframe');
     }
 
     /**

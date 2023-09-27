@@ -1,6 +1,7 @@
 <?php
-
+namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\RegistrationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,13 +15,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcometest');
+});
+Route::get('/iframe', function () {
+    return view('iframe');
 });
 Route::get('/users', [\App\Http\Controllers\RegistrationController::class, 'index']);
 Route::get('/register/{registration}', [\App\Http\Controllers\RegistrationController::class, 'show']);
 Route::get('/register', [\App\Http\Controllers\RegistrationController::class, 'create']);
 Route::post('/register', [\App\Http\Controllers\RegistrationController::class, 'store']);
+Route::get('/mail',[\App\Http\Controllers\MailController::class, 'basic_email']);
 
-Route::get('/register/{registration}/edit', [\App\Http\Controllers\RegistrationController::class, 'edit']);
+Route::get('/register/{registration}/ed it', [\App\Http\Controllers\RegistrationController::class, 'edit']);
 Route::put('/register/{registration}/edit', [\App\Http\Controllers\RegistrationController::class, 'update']);
 Route::delete('/register/{registration}', [\App\Http\Controllers\RegistrationController::class, 'destroy']);
