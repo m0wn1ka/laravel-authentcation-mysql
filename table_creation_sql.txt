@@ -1,0 +1,21 @@
+CREATE TABLE registrations (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    firstname TEXT,
+    lastname TEXT,
+    homephone TEXT DEFAULT '0',
+    extension TEXT DEFAULT '0',
+    workphone TEXT DEFAULT '0',
+    fax TEXT DEFAULT '0',
+    cellphone TEXT DEFAULT '0',
+    email TEXT DEFAULT '0',
+    homeaddress TEXT DEFAULT '0',
+    country TEXT DEFAULT '0',
+    city TEXT DEFAULT '0',
+    state TEXT DEFAULT '0',
+    zip TEXT DEFAULT '0',
+    gender TEXT DEFAULT '0',
+    martialstatus TEXT DEFAULT '0',
+    agree TEXT DEFAULT '0',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
