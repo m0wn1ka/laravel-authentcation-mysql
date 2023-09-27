@@ -3,6 +3,6 @@ xampp or wapp<br>
 node<br>
 code editor<br>
 ## what it does
-take inputs from user ,store in database(exoect dob)
+home page with navbar,on clicking registration  button ,in a i frame registration form will open once you register your data will be stored in db,and you will be redirected 
 ### reference link
 https://www.section.io/engineering-education/laravel-beginners-guide-blogpost/
