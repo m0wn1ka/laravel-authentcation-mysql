@@ -2,10 +2,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+	  
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,24 +15,6 @@
         .hidden-list {
             display: none;
         }
-        .navbar-toggler-icon {
-    display: inline-block;
-    width: 1.5em;
-    height: 1.5em;
-    vertical-align: middle;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-    background-color: #d7211f;
-}	  
-  @media only screen and (min-width: 600px), screen and (max-width: 701px)
-  {
-   .login_body {
-
-        background-image:url('https://3asresearchsolutions.in/PMT/resources/views/5-3-768x531.png');
-	    height:"500px";
-              }
-}    
 
         /* CSS to show the list when the button is hovered */
         .show-on-hover:hover + .hidden-list {
@@ -147,7 +126,7 @@
         }
         body {
             font-family: Arial, sans-serif;
-            margin: 0auto;
+            margin: 0 auto;
             padding: 0;
             
             height:100px;
@@ -202,9 +181,6 @@
                 flex: 100%;
             }
         }
-        .dropdown-item{
-            display:none;
-        }
     </style>
   </head>
   <body> 
@@ -221,17 +197,17 @@
 <a class="nav-link h6  active " href="#" aria-current="page" >CONTACT US</a>
 <a class="nav-link h6  active " href="/register" aria-current="page" target="iframe">REGISTER</a>
 
-    <!-- login -->
-    
-    <button class="btn btn-primary" id="loginButton">Login</button>
-    <div id="list1" class="mt-3" style="display: none;">
-   <a class="dropdown-item" href="https://3asresearchsolutions.in/PMT/resources/views/panellogin.blade.php">Panel/User Login</a> 
-    </div>
-    <div id="list2" class="mt-3" style="display: none;">
-    <a class="dropdown-item" href="https://3asresearchsolutions.in/PMT/public/login">Admin Login</a>
-       
-    </div>
-
+<form>
+<div class="nav-item dropdown">
+          <a class="btn btn-outline-success m-0 "  href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Login
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="https://3asresearchsolutions.in/PMT/resources/views/panellogin.blade.php">Panel/User Login</a></li>
+            <li><a class="dropdown-item" href="https://3asresearchsolutions.in/PMT/public/login">Admin Login</a></li>
+          </ul>
+</div>
+</form>
 </div>
 </section>
   <!--------Navigation Bar ends----------------->
@@ -349,24 +325,5 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
-    
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-<script>
-    document.getElementById('loginButton').addEventListener('click', function() {
-        var list1 = document.getElementById('list1');
-        var list2 = document.getElementById('list2');
-
-        if (list1.style.display === 'none') {
-            list1.style.display = 'block';
-            list2.style.display = 'block';
-        } else {
-            list1.style.display = 'none';
-            list2.style.display = 'none';
-        }
-    });
-</script>
   </body>
 </html>

@@ -182,6 +182,7 @@
             <div>
 
           </li>
+        <!-- col1 ends -->
         
 
 			  <li class="col-lg-4">

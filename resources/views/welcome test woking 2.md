@@ -65,9 +65,7 @@
 	    height:"500px";
               }
 }    
-		   
-</style>
-<style>
+	
         .navbar-toggler-icon {
     display: inline-block;
     width: 1.5em;
@@ -160,6 +158,8 @@
             background-color: #333;
             overflow: hidden;   
         }
+
+
         .navbar a {
             float: left;
             display: block;
@@ -202,9 +202,6 @@
                 flex: 100%;
             }
         }
-        .dropdown-item{
-            display:none;
-        }
     </style>
   </head>
   <body> 
@@ -219,10 +216,11 @@
 <a class="nav-link h6 active " href="#"  aria-current="page ">SERVICES</a>
 <a class="nav-link h6  active" href="#" aria-current="page">RESOURCES</a>
 <a class="nav-link h6  active " href="#" aria-current="page" >CONTACT US</a>
-<a class="nav-link h6  active " href="/register" aria-current="page" target="iframe">REGISTER</a>
+<a class="nav-link h6  active " href="/register" aria-current="page" target="iframe">REGISTER
+</a>
 
     <!-- login -->
-    
+    <div class="container mt-5">
     <button class="btn btn-primary" id="loginButton">Login</button>
     <div id="list1" class="mt-3" style="display: none;">
    <a class="dropdown-item" href="https://3asresearchsolutions.in/PMT/resources/views/panellogin.blade.php">Panel/User Login</a> 
@@ -231,7 +229,7 @@
     <a class="dropdown-item" href="https://3asresearchsolutions.in/PMT/public/login">Admin Login</a>
        
     </div>
-
+</div>
 </div>
 </section>
   <!--------Navigation Bar ends----------------->

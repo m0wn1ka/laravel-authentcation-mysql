@@ -1,8 +1,15 @@
 <html>
+<style>
+         .background-div {
+            background-image: url('https://3asresearchsolutions.in/PMT/resources/views/5-3-768x531.png');
+            background-size: cover; 
+            width: 100%;
+            height: 269px;
+        }
+        </style>
     <body>
-        <div>
-            <center><h2>Founder</h2></center>
-             &emsp; &emsp; Founded in 2002 by Young entrepreneurs Buddhinath Mangalamurti with Gresha Sen Gupta, from Different industries, who came togather, grown it into a Advertising & Research house.
-</div>
+        <div class="background-div">
+            
+            </div>
 </body>
 </html>
