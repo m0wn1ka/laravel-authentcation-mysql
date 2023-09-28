@@ -341,7 +341,7 @@ html {
     </div>
     <div class="column" >
         
-        <iframe src="/iframe" height="550" width="100%" name="iframe"></iframe>
+        <iframe src="/iframe" height="300" width="100%" name="iframe"></iframe>
     
     
 </div>
