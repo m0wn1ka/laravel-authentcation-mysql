@@ -78,6 +78,14 @@
     background-size: 100%;
     background-color: #d7211f;
 }	  
+html {
+   height: 100%;
+   position:fixed;
+          top:0px;
+          bottom:0px;
+            left:0px;
+            right:0px;
+}
   @media only screen and (min-width: 600px), screen and (max-width: 701px)
   {
    .login_body {
@@ -98,6 +106,7 @@
             left: 0;
             display: none;
         }
+
 
 
                .slider-container {
@@ -147,10 +156,15 @@
         }
         body {
             font-family: Arial, sans-serif;
-            margin: 0auto;
+            margin: 0;
             padding: 0;
-            
-            height:100px;
+            height:100%;
+
+            position:fixed;
+          top:0px;
+          bottom:0px;
+            left:0px;
+            right:0px;
         }
         .navbar {
             background-color: #333;
@@ -207,7 +221,7 @@
         }
     </style>
   </head>
-  <body> 
+  <body > 
   <section style=" margin-top: 10px;">
 	  
 	  <!---------------------Nav bar start---------------------------------->
