@@ -20,6 +20,9 @@ Route::get('/', function () {
 Route::get('/iframe', function () {
     return view('iframe');
 });
+Route::get('/iframe2', function () {
+    return view('iframe2');
+});
 Route::get('/users', [\App\Http\Controllers\RegistrationController::class, 'index']);
 Route::get('/register/{registration}', [\App\Http\Controllers\RegistrationController::class, 'show']);
 Route::get('/register', [\App\Http\Controllers\RegistrationController::class, 'create']);

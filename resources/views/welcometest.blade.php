@@ -336,9 +336,12 @@ html {
 
     <!-- Element Start -->
     <div class="row" >
-    <div class="column">
-        <img src="https://3asresearchsolutions.in/PMT/resources/views/5-3-768x531.png" class="image1">
-    </div>
+    <div class="column" >
+        
+        <iframe src="/iframe2" height="300" width="100%" name="iframe2"></iframe>
+    
+    
+</div>
     <div class="column" >
         
         <iframe src="/iframe" height="300" width="100%" name="iframe"></iframe>
