@@ -15,7 +15,7 @@ use App\Http\Controllers\RegistrationController;
 */
 
 Route::get('/', function () {
-    return view('welcometest');
+    return view('login');
 });
 Route::get('/iframe', function () {
     return view('iframe');
