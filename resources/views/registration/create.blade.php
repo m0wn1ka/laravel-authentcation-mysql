@@ -388,7 +388,7 @@ fax </td><td>
 <tr>
     <td>
                            martial </td>
-    <td><select name="martialstatus" id="martialstatus">
+    <td><select name="martialstatus" id="martialstatus" required>
     <option value="">-Select Marital Status-</option>
     <option value="Single">Single</option>
     <option value="Married">Married</option>
@@ -397,16 +397,16 @@ fax </td><td>
     <option value="Divorced">Divorced</option>
 </select></td>
 <td>dob:</td><td>
-<input type="date" id="dob" name="dob" style="width: 39%;">
+<input type="date" id="dob" name="dob" style="width: 39%;" required>
 </td></tr>
 </table>
-<input type="checkbox" id="agree" name="agree" value="agree">
+<input type="checkbox" id="agree" name="agree" value="agree" required>
 I agree to the GMRO Terms Conditions and consent to the collection of personal data pursuant to the GMRO Privacy Policy
 </div>
                             
                         <div class="row mt-2">
                             <div class="control-group col-12 text-center">
-                                <button id="btn-submit" class="btn btn-primary" onclick="alert('registerd')">
+                                <button id="btn-submit" class="btn btn-primary">
                                     Create User
                                 </button>
                                 
